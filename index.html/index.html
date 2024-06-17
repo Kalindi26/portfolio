@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio </title>
+    <link rel="stylesheet" href="portfolio.css">
+    <!----Font awesome cdn  font icon css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+     <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-k"></i>
+                    <div class="logo-text">Kalindi Mishra</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        
+                        <li><a href="resumekalindi.pdf">Resume</a></li>
+                      
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                 <div class="hero-pic">
+                    <img src=kalindi.jpg alt="profile pic">
+                 </div>
+                 <div class="hero-text">
+                    <h5>Hey I'm</h5>
+                    <h1>Kalindi Mishra</h1>
+                    <p> I am currently pursuing  B.Tech in Artificial Intelligence and Robotics at Madhav Institute of Technology and Science, Gwalior, with a CGPA of 8.45.
+                    My interests lie in data structures and algorithms ,web development as well as  basics of UI/UX design. I am proficient in C++ programming and have 
+                 a foundational understanding of Python. As a motivated individual, I am always eager to learn new things and expand my skill set.
+                    </p>
+
+                    <div class="btn-group">
+                       <a href="resumekalindi.pdf" class="btn active">Download resume</a>
+                       
+                      
+                    </div>
+
+                    <div class="social">
+                       
+                        <a href="https://www.linkedin.com/in/kalindi-mishra-04193525b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/mishrakalindi26?igsh=MTl3N2sxeTI2YTgyag=="><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/Kalindi26?tab=repositories"><i class="fa-brands fa-github"></i></a>
+                        <a href="mailto:kalindimishra2626@gmail.com"></a> <i class="fa-brands fa-email"></i></a>
+                        
+                    </div>
+                 </div>
+            </div>
+        </div>
+     </div>
+     <!---typed js for typing text effect-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+     <script>
+        /* creating button click show hide navbar */
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        
+        
+     </script>
+</body>
+</html>
